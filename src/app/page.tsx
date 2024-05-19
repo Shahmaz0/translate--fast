@@ -4,6 +4,7 @@ import {Button} from "@/components/ui/button";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGift, faStar} from '@fortawesome/free-solid-svg-icons';
 import {Avatar, AvatarFallback, AvatarImage} from "@/components/ui/avatar";
+import CompareCard from "@/components/compare-card";
 
 
 export default function Home() {
@@ -12,10 +13,10 @@ export default function Home() {
           <div className={"h-screen max-h-screen bg-neutral-900"}>
               <header className={"flex justify-center"}>
                   <div className={"max-w-screen-lg p-8 flex justify-between w-full"}>
-                      <div className={"flex gap-2 items-center"}>
+                      <Link className={"flex gap-2 items-center"} href={"/"}>
                           <Image src={"/icon.png"} alt={""} width={24} height={24}/>
                           <p className={"font-black"}>TranslateFast</p>
-                      </div>
+                      </Link>
                       <div className={"flex gap-6 font-semibold"}>
                           <Button variant={"link"}>
                             <Link href={"#Pricing"}>Pricing</Link>
@@ -96,10 +97,18 @@ export default function Home() {
                           </div>
                       </div>
                       <div className={"rounded-lg overflow-hidden"}>
-                          <Image src={"https://picsum.photos/500/400"} alt={""} width={500} height={400}/>
+                          <Image src={"https://picsum.photos/800/500"} alt={""} width={800} height={500}/>
                       </div>
                   </section>
               </main>
+          </div>
+          <div className={"min-h-screen"}>
+              <h2 className={"text-4xl font-bold text-center"}>
+                  Tired of manually translating the released notes?
+              </h2>
+              <CompareCard title={"Translations without TranslateFast"} variant={"negative"}>
+                  Some text
+              </CompareCard>
           </div>
           <footer></footer>
       </>
