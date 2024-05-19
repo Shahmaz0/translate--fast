@@ -1,14 +1,14 @@
 import React, {BaseHTMLAttributes} from "react";
 import {cva, VariantProps} from "class-variance-authority";
-import {buttonVariants} from "@/components/ui/button";
 import {cn} from "@/lib/utils";
 
-const compareVariants = cva("rounded-md p-6",{
+const compareVariants = cva("rounded-md p-6 flex flex-col gap-2",{
     variants: {
         variant: {
             positive: "bg-green-200 text-green-900",
             negative: "bg-red-200 text-red-900",
         },
+
     },
     defaultVariants: {
         variant: "positive",

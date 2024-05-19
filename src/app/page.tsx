@@ -102,13 +102,38 @@ export default function Home() {
                   </section>
               </main>
           </div>
-          <div className={"min-h-screen"}>
+          <div className={"min-h-screen py-24"}>
               <h2 className={"text-4xl font-bold text-center"}>
                   Tired of manually translating the released notes?
               </h2>
-              <CompareCard title={"Translations without TranslateFast"} variant={"negative"}>
-                  Some text
-              </CompareCard>
+              <div className={"flex max-lg:flex-col gap-4 w-full p-8"}>
+                  <CompareCard
+                      title={"Translations without TranslateFast"}
+                      variant={"negative"}
+                      className={"flex flex-grow"}
+                  >
+
+                      Some text
+
+                      <div>hello Every one this is abu Shahma Ansari a second year grad</div>
+                      <div>hello Every one this is abu Shahma Ansari a second year grad</div>
+                      <div>hello Every one this is abu Shahma Ansari a second year grad</div>
+                      <div>hello Every one this is abu Shahma Ansari a second year grad</div>
+                      <div>hello Every one this is abu Shahma Ansari a second year grad</div>
+                  </CompareCard>
+                  <CompareCard
+                      title={"Translations with TranslateFast"}
+                      variant={"positive"}
+                      className={"flex flex-grow"}
+                  >
+                      Some text
+                      <div>hello Every one this is abu Shahma Ansari a second year grad</div>
+                      <div>hello Every one this is abu Shahma Ansari a second year grad</div>
+                      <div>hello Every one this is abu Shahma Ansari a second year grad</div>
+                      <div>hello Every one this is abu Shahma Ansari a second year grad</div>
+                      <div>hello Every one this is abu Shahma Ansari a second year grad</div>
+                  </CompareCard>
+              </div>
           </div>
           <footer></footer>
       </>
