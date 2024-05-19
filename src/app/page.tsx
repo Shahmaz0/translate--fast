@@ -5,6 +5,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGift, faStar} from '@fortawesome/free-solid-svg-icons';
 import {Avatar, AvatarFallback, AvatarImage} from "@/components/ui/avatar";
 import CompareCard from "@/components/compare-card";
+import UserReview from "@/components/review";
 
 
 export default function Home() {
@@ -134,7 +135,13 @@ export default function Home() {
                       <div>hello Every one this is abu Shahma Ansari a second year grad</div>
                   </CompareCard>
               </div>
-          </div>
+              <UserReview
+                  image=""
+                  name={"Shahma Ansari"}
+                  title={"8100"}
+                  message={"I loved your product! It saved me so much time and effort, it's the best thing in the world blah blah blah."}
+              />
+          </div>=
           <footer></footer>
       </>
   );
