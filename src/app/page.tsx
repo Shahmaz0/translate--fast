@@ -5,7 +5,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGift, faStar} from '@fortawesome/free-solid-svg-icons';
 import {Avatar, AvatarFallback, AvatarImage} from "@/components/ui/avatar";
 import CompareCard from "@/components/compare-card";
-import UserReview from "@/components/review";
+import UserReview from "@/components/user-review";
 
 
 export default function Home() {
@@ -103,7 +103,7 @@ export default function Home() {
                   </section>
               </main>
           </div>
-          <div className={"min-h-screen py-24"}>
+          <div className={"min-h-screen py-24 flex flex-col items-center"}>
               <h2 className={"text-4xl font-bold text-center"}>
                   Tired of manually translating the released notes?
               </h2>
@@ -136,12 +136,12 @@ export default function Home() {
                   </CompareCard>
               </div>
               <UserReview
-                  image=""
-                  name={"Shahma Ansari"}
-                  title={"8100"}
                   message={"I loved your product! It saved me so much time and effort, it's the best thing in the world blah blah blah."}
+                  image="https://picsum.photos/100"
+                  name={"Shahma Ansari"}
+                  title={"8100 Followers on Twitter"}
               />
-          </div>=
+          </div>
           <footer></footer>
       </>
   );
