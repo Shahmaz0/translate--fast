@@ -6,6 +6,8 @@ import {faGift, faStar} from '@fortawesome/free-solid-svg-icons';
 import {Avatar, AvatarFallback, AvatarImage} from "@/components/ui/avatar";
 import CompareCard from "@/components/compare-card";
 import UserReview from "@/components/user-review";
+import {Accordion, AccordionContent, AccordionItem, AccordionTrigger} from "@/components/ui/accordion";
+import {Divide} from "lucide-react";
 
 
 export default function Home() {
@@ -103,7 +105,7 @@ export default function Home() {
                   </section>
               </main>
           </div>
-          <div className={"min-h-screen py-24 flex flex-col items-center"}>
+          <div className={"py-24 flex flex-col items-center gap-10"}>
               <h2 className={"text-4xl font-bold text-center"}>
                   Tired of manually translating the released notes?
               </h2>
@@ -141,6 +143,84 @@ export default function Home() {
                   name={"Shahma Ansari"}
                   title={"8100 Followers on Twitter"}
               />
+          </div>
+
+          <div className={"justify-center py-14"}>
+              <div className={"flex flex-col items-center gap-10"}>
+                  <div>
+                      <h2 className={"text-4xl font-bold text-center pb-2"}>How it Works</h2>
+                      <div className={"flex gap-8 max-md:flex-col"}>
+                          <div>
+                              <Accordion type="single" collapsible>
+                                  <AccordionItem value="item-1">
+                                      <AccordionTrigger>
+                                          1. Connect your App Store, Connect your API Key?
+                                      </AccordionTrigger>
+                                      <AccordionContent>
+                                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                                          et nisi dolorem excepturi sit, accusamus rerum laudantium hic culpa
+                                          accusantium necessitatibus eos quo provident
+                                      </AccordionContent>
+                                  </AccordionItem>
+                                  <AccordionItem value="item-2">
+                                      <AccordionTrigger>
+                                          2. Choose your translation provider
+                                      </AccordionTrigger>
+                                      <AccordionContent>
+                                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                                          et nisi dolorem excepturi sit, accusamus rerum laudantium hic culpa
+                                          accusantium necessitatibus eos quo provident
+                                      </AccordionContent>
+                                  </AccordionItem>
+                                  <AccordionItem value="item-3">
+                                      <AccordionTrigger>
+                                          3. Upload your source translations
+                                      </AccordionTrigger>
+                                      <AccordionContent>
+                                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                                          et nisi dolorem excepturi sit, accusamus rerum laudantium hic culpa
+                                          accusantium necessitatibus eos quo provident
+                                      </AccordionContent>
+                                  </AccordionItem>
+                                  <AccordionItem value="item-4">
+                                      <AccordionTrigger>
+                                          4. Publish!
+                                      </AccordionTrigger>
+                                      <AccordionContent>
+                                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                                          et nisi dolorem excepturi sit, accusamus rerum laudantium hic culpa
+                                          accusantium necessitatibus eos quo provident
+                                      </AccordionContent>
+                                  </AccordionItem>
+                              </Accordion>
+                          </div>
+                          <div>
+                              <Image
+                                  src={"https://picsum.photos/400/300"}
+                                  alt={""}
+                                  width={300}
+                                  height={400}
+                                  className={"rounded-lg object-contain"}
+                              />
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div className={"justify-center py-14"}>
+              <div className={"flex gap-4 px-8"}>
+                  <div className={"flex w-full"}>
+                      <Image
+                          src={"https://picsum.photos/800/500"}
+                          alt={""}
+                          height={500}
+                          width={800}
+                      />
+                  </div>
+                  <div className={"flex w-full"}>
+                      <h2 className={"text-4xl font-bold pb-4"}>Bring your own provider</h2>
+                  </div>
+              </div>
           </div>
           <footer></footer>
       </>
