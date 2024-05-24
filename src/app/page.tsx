@@ -8,6 +8,7 @@ import CompareCard from "@/components/compare-card";
 import UserReview from "@/components/user-review";
 import {Accordion, AccordionContent, AccordionItem, AccordionTrigger} from "@/components/ui/accordion";
 import {Divide} from "lucide-react";
+import GetNowButton from "@/components/get-now-button";
 
 
 export default function Home() {
@@ -46,10 +47,11 @@ export default function Home() {
                               </p>
                           </div>
                           <div className={"flex flex-col gap-4"}>
-                              <Button className={"flex gap-2 w-fit"}>
-                                  <p>Get TranslateFast</p>
-                                  <Image src={"/icon-alt.png"} alt={""} width={20} height={20}/>
-                              </Button>
+                              <GetNowButton />
+                              {/*<Button className={"flex gap-2 w-fit"}>*/}
+                              {/*    <p>Get TranslateFast</p>*/}
+                              {/*    <Image src={"/icon-alt.png"} alt={""} width={20} height={20}/>*/}
+                              {/*</Button>*/}
                               <div className={"flex gap-1 items-center"}>
                                   <FontAwesomeIcon
                                       icon={faGift}
@@ -207,9 +209,9 @@ export default function Home() {
                   </div>
               </div>
           </div>
-          <div className={"justify-center py-14"}>
-              <div className={"flex gap-4 px-8"}>
-                  <div className={"flex w-full"}>
+          <div className={"flex justify-center py-14"}>
+              <div className={"flex gap-4 px-8 max-w-screen-lg max-lg:flex-col"}>
+                  <div className={"flex w-full rounded-lg overflow-hidden"}>
                       <Image
                           src={"https://picsum.photos/800/500"}
                           alt={""}
@@ -217,8 +219,10 @@ export default function Home() {
                           width={800}
                       />
                   </div>
-                  <div className={"flex w-full"}>
+                  <div className={"flex w-full flex-col gap-4"}>
                       <h2 className={"text-4xl font-bold pb-4"}>Bring your own provider</h2>
+                      <p>Bring your own API key and never pay monthly fee again.</p>
+                      <GetNowButton/>
                   </div>
               </div>
           </div>
