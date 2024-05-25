@@ -111,7 +111,7 @@ export default function Home() {
               <h2 className={"text-4xl font-bold text-center"}>
                   Tired of manually translating the released notes?
               </h2>
-              <div className={"flex max-lg:flex-col gap-4 w-full p-8"}>
+              <div className={"flex max-lg:flex-col gap-4 max-w-screen-lg mx-auto w-full py-8"}>
                   <CompareCard
                       title={"Translations without TranslateFast"}
                       variant={"negative"}
@@ -150,7 +150,7 @@ export default function Home() {
           <div className={"justify-center py-14"}>
               <div className={"flex flex-col items-center gap-10"}>
                   <div>
-                      <h2 className={"text-4xl font-bold text-center pb-2"}>How it Works</h2>
+                      <h2 className={"text-4xl font-bold pb-2"}>How it Works</h2>
                       <div className={"flex gap-8 max-md:flex-col"}>
                           <div>
                               <Accordion type="single" collapsible>
