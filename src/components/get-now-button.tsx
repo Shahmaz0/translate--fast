@@ -10,10 +10,6 @@ export interface GetNowButtonProps
 
 const GetNowButton = ({ text, className, ... props}: GetNowButtonProps) => {
     return (
-        // <Button className={"flex gap-2 w-fit " + className} {... props}>
-        //     <p>{text ?? "Get TranslateFast" }</p>
-        //     <Image src={"/icon-alt.png"} alt={""} width={24} height={24} />
-        // </Button>
         <Button className={"flex gap-2 w-fit " + className} {... props}>
             <p>{text ?? "Get TranslateFast" }</p>
             <Image src={"/icon-alt.png"} alt={""} width={24} height={24} />
