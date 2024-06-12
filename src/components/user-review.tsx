@@ -16,6 +16,15 @@ const UserReview = React.forwardRef<HTMLDivElement, UserReviewProps>(
     ({ title, name, message, image } , ref) => {
         return (
             <div className={"flex flex-col items-center max-w-80 gap-4"} ref={ref}>
+                {/*<div className={""}>*/}
+                {/*    <div className={"flex gap-[2px] text-amber-500 h-4 fit"}>*/}
+                {/*        <FontAwesomeIcon icon={faStar}/>*/}
+                {/*        <FontAwesomeIcon icon={faStar}/>*/}
+                {/*        <FontAwesomeIcon icon={faStar}/>*/}
+                {/*        <FontAwesomeIcon icon={faStar}/>*/}
+                {/*        <FontAwesomeIcon icon={faStar}/>*/}
+                {/*    </div>*/}
+                {/*</div>*/}
                 <div className={""}>
                     <div className={"flex gap-[2px] text-amber-500 h-4 fit"}>
                         <FontAwesomeIcon icon={faStar}/>
