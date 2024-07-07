@@ -23,10 +23,10 @@ export default function Home() {
                       </Link>
                       <div className={"flex gap-6 font-semibold"}>
                           <Button variant={"link"}>
-                            <Link href={"#Pricing"}>Pricing</Link>
+                              <Link href={"#Pricing"}>Pricing</Link>
                           </Button>
                           <Button variant={"link"}>
-                            <Link href={"#demo"}>Demo</Link>
+                              <Link href={"#demo"}>Demo</Link>
                           </Button>
                           <Button variant={"link"}>
                               <Link href={"#faq"}>FAQ</Link>
@@ -47,7 +47,7 @@ export default function Home() {
                               </p>
                           </div>
                           <div className={"flex flex-col gap-4"}>
-                              <GetNowButton />
+                              <GetNowButton/>
                               {/*<Button className={"flex gap-2 w-fit"}>*/}
                               {/*    <p>Get TranslateFast</p>*/}
                               {/*    <Image src={"/icon-alt.png"} alt={""} width={20} height={20}/>*/}
@@ -147,21 +147,22 @@ export default function Home() {
               />
           </div>
 
-          <div className={"justify-center py-14"}>
-              <div className={"flex flex-col items-center gap-10"}>
+          <section className="flex justify-center">
+              <div className="flex max-w-screen-lg gap-4 max-md:flex-col">
                   <div>
-                      <h2 className={"text-4xl font-bold pb-2"}>How it Works</h2>
-                      <div className={"flex gap-8 max-md:flex-col"}>
-                          <div>
-                              <Accordion type="single" collapsible>
+                      <h2 className="pb-4 text-4xl font-bold">How it Works</h2>
+                      <div className="flex max-w-screen-lg gap-4 max-md:flex-col">
+                          <div className="flex w-full">
+                              <Accordion type="single" defaultValue="item-1">
                                   <AccordionItem value="item-1">
                                       <AccordionTrigger>
-                                          1. Connect your App Store, Connect your API Key?
+                                          1. Connect your App Store Connect API Key
                                       </AccordionTrigger>
                                       <AccordionContent>
-                                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-                                          et nisi dolorem excepturi sit, accusamus rerum laudantium hic culpa
-                                          accusantium necessitatibus eos quo provident
+                                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                          Voluptatum perferendis delectus quibusdam temporibus,
+                                          voluptate eveniet architecto cumque aliquid dignissimos
+                                          voluptatibus quasi beatae!
                                       </AccordionContent>
                                   </AccordionItem>
                                   <AccordionItem value="item-2">
@@ -169,9 +170,10 @@ export default function Home() {
                                           2. Choose your translation provider
                                       </AccordionTrigger>
                                       <AccordionContent>
-                                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-                                          et nisi dolorem excepturi sit, accusamus rerum laudantium hic culpa
-                                          accusantium necessitatibus eos quo provident
+                                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                          Voluptatum perferendis delectus quibusdam temporibus,
+                                          voluptate eveniet architecto cumque aliquid dignissimos
+                                          voluptatibus quasi beatae!
                                       </AccordionContent>
                                   </AccordionItem>
                                   <AccordionItem value="item-3">
@@ -179,36 +181,36 @@ export default function Home() {
                                           3. Upload your source translations
                                       </AccordionTrigger>
                                       <AccordionContent>
-                                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-                                          et nisi dolorem excepturi sit, accusamus rerum laudantium hic culpa
-                                          accusantium necessitatibus eos quo provident
+                                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                          Voluptatum perferendis delectus quibusdam temporibus,
+                                          voluptate eveniet architecto cumque aliquid dignissimos
+                                          voluptatibus quasi beatae!
                                       </AccordionContent>
                                   </AccordionItem>
                                   <AccordionItem value="item-4">
-                                      <AccordionTrigger>
-                                          4. Publish!
-                                      </AccordionTrigger>
+                                      <AccordionTrigger>4. Publish!</AccordionTrigger>
                                       <AccordionContent>
-                                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-                                          et nisi dolorem excepturi sit, accusamus rerum laudantium hic culpa
-                                          accusantium necessitatibus eos quo provident
+                                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                          Voluptatum perferendis delectus quibusdam temporibus,
+                                          voluptate eveniet architecto cumque aliquid dignissimos
+                                          voluptatibus quasi beatae!
                                       </AccordionContent>
                                   </AccordionItem>
                               </Accordion>
                           </div>
-                          <div>
+                          <div className="flex w-full justify-center">
                               <Image
-                                  src={"https://picsum.photos/400/300"}
-                                  alt={""}
-                                  width={300}
-                                  height={400}
-                                  className={"rounded-lg object-contain"}
+                                  src="https://picsum.photos/400/300"
+                                  alt=""
+                                  height={300}
+                                  width={400}
+                                  className="rounded-lg object-cover shadow-lg"
                               />
                           </div>
                       </div>
                   </div>
               </div>
-          </div>
+          </section>
           <div className={"flex justify-center py-14"}>
               <div className={"flex gap-4 px-8 max-w-screen-lg max-lg:flex-col"}>
                   <div className={"flex w-full rounded-lg overflow-hidden"}>
